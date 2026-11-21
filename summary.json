@@ -1,0 +1,70 @@
+{
+  "pilot": {
+    "paired_cases": 3,
+    "generic_successes": 3,
+    "specific_successes": 3,
+    "generic_success_rate": 1.0,
+    "specific_success_rate": 1.0,
+    "difference_percentage_points": 0.0,
+    "both_succeeded": 3,
+    "both_failed": 0,
+    "generic_only_succeeded": 0,
+    "specific_only_succeeded": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "status_counts": {
+      "generic": {
+        "success": 3
+      },
+      "specific": {
+        "success": 3
+      }
+    },
+    "logged_rows": 6,
+    "logged_token_totals": {
+      "prompt_tokens": 19783,
+      "completion_tokens": 292,
+      "prompt_cache_hit_tokens": 11904,
+      "prompt_cache_miss_tokens": 7879,
+      "total_tokens": 20075
+    }
+  },
+  "formal": {
+    "paired_cases": 30,
+    "generic_successes": 25,
+    "specific_successes": 25,
+    "generic_success_rate": 0.8333333333333334,
+    "specific_success_rate": 0.8333333333333334,
+    "difference_percentage_points": 0.0,
+    "both_succeeded": 25,
+    "both_failed": 5,
+    "generic_only_succeeded": 0,
+    "specific_only_succeeded": 0,
+    "mcnemar_exact_two_sided_p": 1.0,
+    "status_counts": {
+      "generic": {
+        "success": 25,
+        "failed_retry": 5
+      },
+      "specific": {
+        "success": 25,
+        "failed_retry": 5
+      }
+    },
+    "logged_rows": 60,
+    "logged_token_totals": {
+      "prompt_tokens": 185191,
+      "completion_tokens": 3183,
+      "prompt_cache_hit_tokens": 160256,
+      "prompt_cache_miss_tokens": 24935,
+      "total_tokens": 188374
+    }
+  },
+  "logged_token_totals": {
+    "prompt_tokens": 204974,
+    "completion_tokens": 3475,
+    "prompt_cache_hit_tokens": 172160,
+    "prompt_cache_miss_tokens": 32814,
+    "total_tokens": 208449
+  },
+  "issues": []
+}

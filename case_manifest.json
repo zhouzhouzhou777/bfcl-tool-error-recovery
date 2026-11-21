@@ -1,0 +1,741 @@
+{
+  "pilot": [
+    {
+      "id": "multi_turn_base_1",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 4,
+      "source_turn_count": 4,
+      "target_tool": "tail",
+      "target_arguments": {
+        "file_name": "log.txt",
+        "lines": 20
+      },
+      "failed_arguments": {
+        "file_name": "lo.txt",
+        "lines": 20
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "tail: lo.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_10",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 5,
+      "source_turn_count": 5,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "summary.txt",
+        "mode": "c"
+      },
+      "failed_arguments": {
+        "file_name": "summar.txt",
+        "mode": "c"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: summar.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_39",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 4,
+      "source_turn_count": 4,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "styles.css"
+      },
+      "failed_arguments": {
+        "file_name": "style.css"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'style.css': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    }
+  ],
+  "formal": [
+    {
+      "id": "multi_turn_base_0",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 4,
+      "source_turn_count": 4,
+      "target_tool": "diff",
+      "target_arguments": {
+        "file_name1": "final_report.pdf",
+        "file_name2": "previous_report.pdf"
+      },
+      "failed_arguments": {
+        "file_name1": "final_repor.pdf",
+        "file_name2": "previous_report.pdf"
+      },
+      "fault_field": "file_name1",
+      "backend_error": {
+        "error": "diff: final_repor.pdf or previous_report.pdf: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name1` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_2",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 5,
+      "source_turn_count": 5,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "IdeasArchive.txt"
+      },
+      "failed_arguments": {
+        "file_name": "IdeasArchiv.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'IdeasArchiv.txt': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_7",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "goals.txt"
+      },
+      "failed_arguments": {
+        "file_name": "goal.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'goal.txt': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_9",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "sort",
+      "target_arguments": {
+        "file_name": "ArchivedFinalReport2024.txt"
+      },
+      "failed_arguments": {
+        "file_name": "ArchivedFinalReport202.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "sort: ArchivedFinalReport202.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_12",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "summary.txt",
+        "mode": "w"
+      },
+      "failed_arguments": {
+        "file_name": "summar.txt",
+        "mode": "w"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: summar.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_13",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 2,
+      "target_tool": "diff",
+      "target_arguments": {
+        "file_name1": "report.txt",
+        "file_name2": "summary.txt"
+      },
+      "failed_arguments": {
+        "file_name1": "report.txt",
+        "file_name2": "summar.txt"
+      },
+      "fault_field": "file_name2",
+      "backend_error": {
+        "error": "diff: report.txt or summar.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name2` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_16",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "2024_research_backup.txt",
+        "mode": "l"
+      },
+      "failed_arguments": {
+        "file_name": "2024_research_backu.txt",
+        "mode": "l"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: 2024_research_backu.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_19",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "final_document.txt"
+      },
+      "failed_arguments": {
+        "file_name": "final_documen.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'final_documen.txt': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_25",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 4,
+      "source_turn_count": 4,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "summary.txt",
+        "mode": "l"
+      },
+      "failed_arguments": {
+        "file_name": "summar.txt",
+        "mode": "l"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: summar.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_36",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "grep",
+      "target_arguments": {
+        "file_name": "summary_2024.txt",
+        "pattern": "Progress"
+      },
+      "failed_arguments": {
+        "file_name": "summary_202.txt",
+        "pattern": "Progress"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "grep: summary_202.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_42",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 3,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "Notes2023.txt",
+        "mode": "c"
+      },
+      "failed_arguments": {
+        "file_name": "Notes202.txt",
+        "mode": "c"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: Notes202.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_4",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "sort",
+      "target_arguments": {
+        "file_name": "report.txt"
+      },
+      "failed_arguments": {
+        "file_name": "repor.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "sort: repor.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_5",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 4,
+      "target_tool": "sort",
+      "target_arguments": {
+        "file_name": "archive_summary.txt"
+      },
+      "failed_arguments": {
+        "file_name": "archive_summar.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "sort: archive_summar.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_6",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 4,
+      "source_turn_count": 5,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "Annual_Report_2023.docx",
+        "mode": "w"
+      },
+      "failed_arguments": {
+        "file_name": "Annual_Report_202.docx",
+        "mode": "w"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: Annual_Report_202.docx: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_8",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 4,
+      "target_tool": "diff",
+      "target_arguments": {
+        "file_name1": "experiment_log.txt",
+        "file_name2": "previous_study_log.txt"
+      },
+      "failed_arguments": {
+        "file_name1": "experiment_lo.txt",
+        "file_name2": "previous_study_log.txt"
+      },
+      "fault_field": "file_name1",
+      "backend_error": {
+        "error": "diff: experiment_lo.txt or previous_study_log.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name1` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_14",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 4,
+      "target_tool": "tail",
+      "target_arguments": {
+        "file_name": "report.csv",
+        "lines": 5
+      },
+      "failed_arguments": {
+        "file_name": "repor.csv",
+        "lines": 5
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "tail: repor.csv: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_15",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 4,
+      "source_turn_count": 5,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "DataSet1.csv",
+        "mode": "c"
+      },
+      "failed_arguments": {
+        "file_name": "DataSet.csv",
+        "mode": "c"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: DataSet.csv: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_17",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "test_report.docx"
+      },
+      "failed_arguments": {
+        "file_name": "test_repor.docx"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'test_repor.docx': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_18",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "sort",
+      "target_arguments": {
+        "file_name": "MonthlySummary.docx"
+      },
+      "failed_arguments": {
+        "file_name": "MonthlySummar.docx"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "sort: MonthlySummar.docx: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_20",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 1,
+      "source_turn_count": 2,
+      "target_tool": "tail",
+      "target_arguments": {
+        "file_name": "file1.txt",
+        "lines": 1
+      },
+      "failed_arguments": {
+        "file_name": "file.txt",
+        "lines": 1
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "tail: file.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_21",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "diff",
+      "target_arguments": {
+        "file_name1": "ProjectOverview.txt",
+        "file_name2": "Draft.txt"
+      },
+      "failed_arguments": {
+        "file_name1": "ProjectOverview.txt",
+        "file_name2": "Draf.txt"
+      },
+      "fault_field": "file_name2",
+      "backend_error": {
+        "error": "diff: ProjectOverview.txt or Draf.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name2` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_22",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 4,
+      "target_tool": "diff",
+      "target_arguments": {
+        "file_name1": "project_analysis.txt",
+        "file_name2": "old_project_analysis.txt"
+      },
+      "failed_arguments": {
+        "file_name1": "project_analysi.txt",
+        "file_name2": "old_project_analysis.txt"
+      },
+      "fault_field": "file_name1",
+      "backend_error": {
+        "error": "diff: project_analysi.txt or old_project_analysis.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name1` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_26",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "file3.txt"
+      },
+      "failed_arguments": {
+        "file_name": "file.txt"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'file.txt': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_28",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "grep",
+      "target_arguments": {
+        "file_name": "analysis_report.txt",
+        "pattern": "error"
+      },
+      "failed_arguments": {
+        "file_name": "analysis_repor.txt",
+        "pattern": "error"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "grep: analysis_repor.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_30",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 1,
+      "source_turn_count": 2,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "test_results.json"
+      },
+      "failed_arguments": {
+        "file_name": "test_result.json"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'test_result.json': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_31",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 1,
+      "source_turn_count": 2,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "data.txt",
+        "mode": "l"
+      },
+      "failed_arguments": {
+        "file_name": "dat.txt",
+        "mode": "l"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: dat.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_32",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 1,
+      "source_turn_count": 2,
+      "target_tool": "wc",
+      "target_arguments": {
+        "file_name": "Spring2023Draft",
+        "mode": "c"
+      },
+      "failed_arguments": {
+        "file_name": "Spring2023Draf",
+        "mode": "c"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "wc: Spring2023Draf: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_33",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 3,
+      "source_turn_count": 5,
+      "target_tool": "grep",
+      "target_arguments": {
+        "file_name": "deploy.py",
+        "pattern": "update"
+      },
+      "failed_arguments": {
+        "file_name": "deplo.py",
+        "pattern": "update"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "grep: deplo.py: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_35",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "cat",
+      "target_arguments": {
+        "file_name": "real_config.py"
+      },
+      "failed_arguments": {
+        "file_name": "real_confi.py"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "cat: 'real_confi.py': No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    },
+    {
+      "id": "multi_turn_base_37",
+      "source_revision": "6ea57973c7a6097fd7c5915698c54c17c5b1b6c8",
+      "target_turn": 2,
+      "source_turn_count": 3,
+      "target_tool": "grep",
+      "target_arguments": {
+        "file_name": "dev_summary.txt",
+        "pattern": "server error"
+      },
+      "failed_arguments": {
+        "file_name": "dev_summar.txt",
+        "pattern": "server error"
+      },
+      "fault_field": "file_name",
+      "backend_error": {
+        "error": "grep: dev_summar.txt: No such file or directory"
+      },
+      "feedback": {
+        "generic": "{\"error\": \"The tool call failed.\"}",
+        "specific": "{\"error\": \"The file specified by `file_name` was not found.\"}"
+      }
+    }
+  ]
+}
